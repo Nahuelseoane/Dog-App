@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Dancing Script", cursive;
+}
+
+body {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dogPictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.randomCards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.dogCard {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 190, 163);
+    border-radius: 10px;
+
+}
+
+#favoriteDogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#favoriteDogsCards {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+}
+
+span {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: burlywood;
+    margin: 20px;
+    /* box-shadow: 2px; */
+}
+
+h2 {
+    font-size: 3rem;
+    color: burlywood;
+    margin: 20px;
+}
+
+img {
+    border-radius: 10px;
+    margin: 5px;
+    height: 140px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    background-color: wheat;
+    border-color: tan;
+    border-radius: 4px;
+    color: indianred;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.0rem;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs App</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>🐶Dogs App🐶</h1>
+
+    <span id="error"></span>
+
+    <section id="dogPictures">
+        <h2>Random Dogs</h2>
+
+        <div class="randomCards">
+            <article class="dogCard">
+                <img id="img1" alt="Foto perro aleatorio">
+                <button id="btn1">Save</button>
+            </article>
+
+            <article class="dogCard">
+                <img id="img2" alt="Foto perro aleatorio">
+                <button id="btn2">Save</button>
+            </article>
+        </div>
+        <button id="reload" onclick="loadRandomDogs()">Reload!</button>
+    </section>
+
+
+    <section id="favoriteDogs">
+        <h2>Favorites</h2>
+        <div id="favoriteDogsCards">
+        </div>
+    </section>
+
+
+    <section id="uploadingDog">
+        <h2>Upload your Dog Picture</h2>
+
+        <form id="uploadingForm">
+            <input id="file" type="file" name="file" />
+            <button type="button" onclick="uploadDogPicture()">Submit Dog picture</button>
+        </form>
+    </section>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
